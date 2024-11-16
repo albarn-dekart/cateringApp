@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CateringApp Home{% endblock %}
+
+{% block body %}
+    {% for flash_success in app.flashes('success') %}
+        {{ flash_success }}
+    {% endfor %}
+{% endblock %}
