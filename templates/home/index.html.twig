@@ -3,7 +3,7 @@
 {% block title %}CateringApp Home{% endblock %}
 
 {% block body %}
-    {% for flash_success in app.flashes('success') %}
-        {{ flash_success }}
+    {% for flash in app.flashes('info') %}
+        <div>{{ flash }}</div>
     {% endfor %}
 {% endblock %}
